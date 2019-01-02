@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="in.deepcodex.sample.MainActivity">
+    <item
+        android:id="@+id/rate"
+        android:icon="@drawable/baseline_star_rate_white_48"
+        android:orderInCategory="100"
+        android:title="Settings"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/share"
+        android:orderInCategory="100"
+        android:title="Share this App"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/support"
+        android:orderInCategory="100"
+        android:title="Contact us"
+        app:showAsAction="never" />
+    <item
+    android:id="@+id/more"
+    android:orderInCategory="100"
+    android:title="More Apps"
+    app:showAsAction="never" />
+
+</menu>

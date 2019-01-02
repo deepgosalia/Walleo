@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "420316878846",
+    "firebase_url": "https://walleo.firebaseio.com",
+    "project_id": "walleo",
+    "storage_bucket": "walleo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:420316878846:android:2f43f9bdab1ee621",
+        "android_client_info": {
+          "package_name": "com.deepifydroid30.app.walleo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "420316878846-3kkoh8uf2m19eg8a10v3uoeelhkla946.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0rkQjFt4FTC3IZYn6uXcx2geGsmpJ0a8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

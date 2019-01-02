@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FullScreen">
+
+    <!--  <android.support.design.widget.AppBarLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+
+          android:theme="@style/AppTheme.AppBarOverlay">
+
+          <android.support.v7.widget.Toolbar
+              android:id="@+id/toolbar"
+              android:layout_width="match_parent"
+              android:layout_height="?attr/actionBarSize"
+              android:background="?attr/colorPrimary"
+              app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+      </android.support.design.widget.AppBarLayout>-->
+    <Switch
+        android:id="@+id/screen_switch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/full_image"
+        android:layout_margin="5dp"
+        android:text="Preview for Lock Screen"
+        android:visibility="invisible"
+
+        />
+
+    <include
+        layout="@layout/content_full_screen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_layout" />
+
+    <RelativeLayout
+        android:id="@+id/loadingPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true" />
+    </RelativeLayout>
+
+    <!--  <android.support.design.widget.FloatingActionButton
+          android:id="@+id/share_button"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_above="@+id/adView"
+          android:visibility="invisible"
+          android:layout_alignParentRight="true"
+          android:src="@drawable/baseline_home_white_48"
+          android:layout_gravity="bottom|end"
+          android:layout_margin="@dimen/fab_margin"
+
+           />-->
+
+    <!-- <Button
+         android:id="@+id/set_wallpaper"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/adView"
+         android:layout_centerInParent="true"
+         android:text="Set as Wallpaper"
+         android:textStyle="bold"
+         android:visibility="invisible"
+
+         android:background="@drawable/capsule"
+         android:textColor="#000000"
+         android:layout_centerHorizontal="true"
+         android:layout_gravity="bottom|center"
+         android:layout_margin="20dp"
+         />-->
+    <!--  <android.support.design.widget.FloatingActionButton
+          android:id="@+id/set_wallpaper"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_above="@+id/adView"
+          android:layout_centerInParent="true"
+          android:textStyle="bold"
+          android:visibility="invisible"
+          android:src="@drawable/baseline_save_white_48dp"
+          android:layout_centerHorizontal="true"
+          android:layout_gravity="bottom|center"
+          android:layout_margin="20dp"/>
+      <android.support.design.widget.FloatingActionButton
+          android:id="@+id/save_button"
+          android:layout_width="wrap_content"
+          android:layout_below="@+id/full_image"
+          android:layout_height="wrap_content"
+          android:visibility="invisible"
+          android:src="@drawable/baseline_lock_white_48"
+          android:layout_gravity="bottom|start"
+          android:layout_above="@+id/adView"
+          android:layout_margin="@dimen/fab_margin"
+          />-->
+
+
+    <!-- <TextView
+         android:layout_width="wrap_content"
+         android:visibility="invisible"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/fab"
+         android:layout_toStartOf="@+id/fab_lock"
+         android:gravity="center_vertical"
+         android:text="Set as:"
+         android:id="@+id/set_text"
+         android:textSize="20sp"
+         android:textStyle="bold"
+         android:layout_toLeftOf="@+id/fab_lock" />
+         <Button
+             android:textSize="20sp"
+             android:visibility="invisible"
+             android:text="Home Screeen"
+             android:layout_marginRight="2dp"
+             android:layout_alignParentRight="true"
+             android:gravity="bottom|start"
+             android:layout_above="@+id/adView"
+             android:id="@+id/fab"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+
+         <Button
+             android:textSize="20sp"
+             android:visibility="invisible"
+             android:text="Lock Screen"
+             android:layout_toLeftOf="@+id/fab"
+             android:layout_gravity="bottom|end"
+             android:layout_above="@+id/adView"
+             android:id="@+id/fab_lock"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+ -->
+
+
+    <LinearLayout
+        android:id="@+id/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/adView"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/lock_wall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+
+                android:background="#000000"
+                android:text="@string/set_as_lock_screen"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/home_wall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="#000000"
+                android:text="@string/set_as_home_screen"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/save_wall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="#000000"
+            android:drawableStart="@drawable/baseline_save_white_48dp"
+            android:drawableLeft="@drawable/baseline_save_white_48dp"
+            android:text="@string/save_to_gallery"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner">
+
+    </com.google.android.gms.ads.AdView>
+
+
+</RelativeLayout>

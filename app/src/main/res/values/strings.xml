@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Walleo</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">SET AS WALLPAPER</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_full_screen">Set as Wallpaper</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="banner">ca-app-pub-9420935402510841/3776619404</string>
+    <string name="appid">ca-app-pub-9420935402510841~6609886056</string>
+    <string name="interstitial">ca-app-pub-9420935402510841/9138301885</string>
+    <string name="name_of_folder">/Walleo_Saved_Images</string>
+    <string name="name_of_file">Walleo</string>
+    <string name="bucket">gs://walleo.appspot.com/images</string>
+    <string name="bucket_child">R-</string>
+    <string name="more_apps">More apps…</string>
+    <string name="set_as_lock_screen">Set as Lock Screen</string>
+    <string name="set_as_home_screen">Set as Home Screen</string>
+    <string name="save_to_gallery">Save to Gallery</string>
+</resources>
