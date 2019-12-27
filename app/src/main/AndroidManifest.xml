@@ -14,9 +14,7 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
-        <meta-data
-            android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-9420935402510841~6609886056" />
+        // PUB ID removed since github repo is public
 
         <activity
             android:screenOrientation="portrait"
